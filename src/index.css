@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+body {
+  @apply font-sans bg-gray-50 text-gray-900;
+}
+
+h1, h2, h3, h4 {
+    @apply font-bold;
+}
+
+h1 {
+    @apply text-2xl font-bold text-blue-600 mb-1;
+}
+
+h2 {
+    @apply text-2xl font-bold text-gray-900 mb-2
+}
