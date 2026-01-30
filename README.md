@@ -7,7 +7,7 @@
 ## Project Overview ##
 **PatientDash** is a simple, single-page dashboard to manage patients.
 - Patient list (table)
-- Total patients (Sticky sidebar)
+- Overview (Sticky sidebar)
 - Click a row -> Detail (Modal)
 - Click a column of the header row -> order
 - Future: CRUD (Create / Edit / Delete)

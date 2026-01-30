@@ -15,3 +15,20 @@ h1 {
 h2 {
     @apply text-2xl font-bold text-gray-900 mb-2
 }
+
+.body {
+    @apply lg:flex min-h-screen 
+}
+
+aside {
+    @apply bg-white p-4 lg:p-8 border-gray-200  border-b lg:border-r lg:border-b-0
+}
+
+main {
+    @apply flex-1  p-4 lg:p-8;
+}
+
+.overview {
+    @apply mt-4 flex lg:flex-col gap-4
+}
+
