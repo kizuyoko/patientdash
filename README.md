@@ -53,7 +53,7 @@ type Patient = {
 - Install TailwindCSS
 - Install Storybook
 - Initialize Git repository
-- Add Header and Layout
+- Basic HTML, CSS, and Layout
 - Display placeholder components
 
 #### Week 2: UI Components & Storybook ####
