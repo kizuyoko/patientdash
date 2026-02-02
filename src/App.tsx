@@ -1,6 +1,7 @@
 import PatientTable from './components/PatientTable';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
+import Heading from './components/ui/Heading';
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <section className='body'>
       <Sidebar />
       <main>
-        <h2>Patient List</h2>
+        <Heading>Patient List</Heading>
         <PatientTable />
         <Footer />
       </main>
