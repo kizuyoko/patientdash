@@ -9,20 +9,18 @@ const meta: Meta<typeof Heading> = {
     level: 2,
     children: 'Patient List',
   },
-  argTypes: {
-    level: {
-      control: { type: 'radio' },
-      options: ['h1', 'h2', 'h3', 'h4'],
-    },
-  },
 }
 
 export default meta;
 type Story = StoryObj<typeof Heading>;
 
-export const Default: Story = {}
+export const Default: Story = {
+  args: {
+    level: 2
+  }
+}
 
-export const H2: Story = {
+export const H1: Story = {
   args: {
     level: 1,
     children: 'MediTech',
