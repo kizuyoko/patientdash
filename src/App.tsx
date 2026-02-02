@@ -6,51 +6,86 @@ function App() {
         <h1>PatientDash</h1>
         <p>Patient Management System</p>
         <div className="overview">
-          <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
-            <p className="text-sm text-blue-600 mb-1">Total Patients</p>
-            <p className="text-3xl font-bold text-blue-700">247</p>
+          <div className="card">
+            <p className="card-title">Total Patients</p>
+            <p className="card-number">247</p>
           </div>
-          <div className="bg-green-50 rounded-lg p-4 border border-green-100">
-            <p className="text-sm text-green-600 mb-1">Active Today</p>
-            <p className="text-3xl font-bold text-green-700">18</p>
+          <div className="card active">
+            <p className="card-title">Active Today</p>
+            <p className="card-number">18</p>
           </div>
-          <div className="bg-orange-50 rounded-lg p-4 border border-orange-100">
-            <p className="text-sm text-orange-600 mb-1">Pending</p>
-            <p className="text-3xl font-bold text-orange-700">5</p>
+          <div className="card pending">
+            <p className="card-title">Pending</p>
+            <p className="card-number">5</p>
           </div>
-          <div className="bg-purple-50 rounded-lg p-4 border border-purple-100">
-            <p className="text-sm text-purple-600 mb-1">Completed</p>
-            <p className="text-3xl font-bold text-purple-700">224</p>
+          <div className="card completed">
+            <p className="card-title">Completed</p>
+            <p className="card-number">224</p>
           </div>
         </div>
       </aside>
       <main>
         <h2>Patient List</h2>
-        <table className="w-full">
-          <thead className="bg-gray-50 border-b border-gray-200">
+        <table>
+          <thead>
             <tr>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Patient ID</th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Age</th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Last Visit</th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Condition</th>
+              <th>Patient ID</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Status</th>
+              <th>Last visit</th>
+              <th>Condition</th>
             </tr>
           </thead>
-          <tbody className="bg-white divide-y divide-gray-200">
-            <tr className="hover:bg-gray-50 transition-colors cursor-pointer">
-              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">PT-001</td>
-              <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Sarah Johnson</td>
-              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">34</td>
-              <td className="px-6 py-4 whitespace-nowrap">
-                <span className="inline-flex px-2 py-1 text-xs font-medium rounded-full bg-green-100 text-green-800">Active</span>
+          <tbody>
+            <tr>
+              <td>PT-001</td>
+              <td><b>Sarah Johnson</b></td>
+              <td>34</td>
+              <td>
+                <span className="status active">Active</span>
               </td>
-              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Jan 27, 2026</td>
-              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Hypertension</td>
+              <td>Jan 27, 2026</td>
+              <td>Hypertension</td>
             </tr>
+            <tr>
+              <td>PT-002</td>
+              <td><b>Michael Chen</b></td>
+              <td>45</td>
+              <td>
+                <span className="status completed">Completed</span>
+              </td>
+              <td>Jan 25, 2026</td>
+              <td>Diabetes Type 2</td>
+            </tr>
+            <tr>
+              <td>PT-003</td>
+              <td><b>Emily Rodriguez</b></td>
+              <td>28</td>
+              <td>
+                <span className="status active">Active</span>
+              </td>
+              <td>Jan 8, 2026</td>
+              <td>Asthma</td>
+            </tr>  
+            <tr>
+              <td>PT-004</td>
+              <td><b>James Williams</b></td>
+              <td>52</td>
+              <td>
+                <span className="status pending">Pending</span>
+              </td>
+              <td>Jan 20, 2026</td>
+              <td>Heart Disease</td>
+            </tr>           
           </tbody>
         </table>
-        <footer>Yoko</footer>
+        <footer>
+          <ul>
+            <li><a href="https://github.com/kizuyoko/patientdash" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/kizuyoko/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </footer>
       </main>
     </section>
   )
