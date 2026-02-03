@@ -2,15 +2,21 @@ import type { ReactNode } from "react";
 
 type HeadingProps = {
     children: ReactNode;
-    level?: 1 | 2 | 3 | 4 | 5 | 6;
+    level?: 1 | 2 | 3 | 4;
     className?: string;
 }
 
 const Heading = ({ children, level = 2, className="" }: HeadingProps) => {
     const Tag = `h${level}` as const;
+    const styles: Record<1 | 2 | 3 | 4, string> = {
+        1: 'font-bold text-2xl text-blue-600 mb-2',
+        2: 'font-bold text-2xl text-gray-900 mb-2',
+        3: 'font-semibold text-xl text-gray-900 mb-1',
+        4: 'font-medium text-lg text-gray-900 mb-1',
+    }
 
     return (
-        <Tag className={className}>
+        <Tag className={`${styles[level]} ${className}`}>
             {children}
         </Tag>
     );
