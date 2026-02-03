@@ -6,7 +6,12 @@ type HeadingProps = {
     className?: string;
 }
 
-const Heading = ({ children, level = 2, className="" }: HeadingProps) => {
+const Heading = ({ 
+    children, 
+    level = 2, 
+    className="",
+    ...props 
+}: HeadingProps) => {
     const Tag = `h${level}` as const;
     const styles: Record<1 | 2 | 3 | 4, string> = {
         1: 'font-bold text-2xl text-blue-600 mb-2',
@@ -16,7 +21,7 @@ const Heading = ({ children, level = 2, className="" }: HeadingProps) => {
     }
 
     return (
-        <Tag className={`${styles[level]} ${className}`}>
+        <Tag className={`${styles[level]} ${className}`} {...props}>
             {children}
         </Tag>
     );
