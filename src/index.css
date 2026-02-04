@@ -48,11 +48,6 @@
 }
 
 @layer components {
-
-    /* Status Colors */
-
-
-
     /* Aside Overview */    
     .overview {
         @apply mt-4 flex lg:flex-col gap-4;
