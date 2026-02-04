@@ -1,8 +1,40 @@
 @import "tailwindcss";
 
+
 @layer base {
+    :root {
+        --color-bg: theme(colors.gray.50);
+        --color-text: theme(colors.gray.900);
+
+        --color-title-total: theme(colors.blue.700);
+        --color-text-total: theme(colors.blue.600);
+        --color-bg-total: theme(colors.blue.50);
+        --color-border-total: theme(colors.blue.200);
+
+        --color-title-active: theme(colors.green.700);
+        --color-text-active: theme(colors.green.600);
+        --color-bg-active: theme(colors.green.50);
+        --color-border-active: theme(colors.green.300);
+
+        --color-title-pending: theme(colors.orange.700);
+        --color-text-pending: theme(colors.orange.600);
+        --color-bg-pending: theme(colors.orange.50);
+        --color-border-pending: theme(colors.orange.200);
+
+        --color-title-completed: theme(colors.purple.700);
+        --color-text-completed: theme(colors.purple.600);
+        --color-bg-completed: theme(colors.purple.50);
+        --color-border-completed: theme(colors.purple.200);
+    }
+
     body {
-        @apply font-sans bg-gray-50 text-gray-900;
+        @apply font-sans;
+        background-color: var(--color-bg);
+        color: var(--color-text);
+    }
+    
+    .body {
+        @apply lg:flex min-h-screen antialiased;
     }
 
     aside {
@@ -16,9 +48,10 @@
 }
 
 @layer components {
-    .body {
-        @apply lg:flex min-h-screen antialiased;
-    }
+
+    /* Status Colors */
+
+
 
     /* Aside Overview */    
     .overview {

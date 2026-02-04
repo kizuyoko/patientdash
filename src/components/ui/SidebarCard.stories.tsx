@@ -6,7 +6,7 @@ const meta: Meta<typeof SideBarCard> = {
     title: 'UI/SideBarCard',
     component: SideBarCard,
     args: {
-        title: 'Total Patients',
+        text: 'Total Patients',
         number: 247,
         variant: 'total',
     },
@@ -15,7 +15,7 @@ const meta: Meta<typeof SideBarCard> = {
             control: {type: 'radio'},
             options: ['total', 'active', 'pending', 'completed'],
         },
-        title: {
+        text: {
             control: 'text',
         },
         number: {
@@ -42,7 +42,7 @@ export const Default: Story = {}
 export const Pending: Story = {
   args: {
     variant: 'pending',
-    title: 'Pending',
+    text: 'Pending',
     number: 5,
   },
 };
@@ -50,7 +50,7 @@ export const Pending: Story = {
 export const Completed: Story = {
   args: {
     variant: 'completed',
-    title: 'Completed',
+    text: 'Completed',
     number: 224,
   },
 };
@@ -58,10 +58,10 @@ export const Completed: Story = {
 export const AllLevels: Story = {
   render: () => (
     <div className="mt-4 flex lg:flex-col gap-4">
-        <SideBarCard title="Total Patients" number={247} />
-        <SideBarCard variant="active" title="Active Today" number={18} />
-        <SideBarCard variant="pending" title="Pending" number={5} />
-        <SideBarCard variant="completed" title="Completed" number={224} />
+        <SideBarCard text="Total Patients" number={247} />
+        <SideBarCard variant="active" text="Active Today" number={18} />
+        <SideBarCard variant="pending" text="Pending" number={5} />
+        <SideBarCard variant="completed" text="Completed" number={224} />
     </div>
   ),
 };  

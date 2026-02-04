@@ -9,22 +9,22 @@ const Sidebar = () => {
             <Paragraph>Patient Management System</Paragraph>
             <div className="overview">
                 <SidebarCard 
-                    title="Total Patients"
+                    text="Total Patients"
                     number={247}
                 />
                 <SidebarCard 
                     variant="active"
-                    title="Active Today"
+                    text="Active Today"
                     number={18}
                 />
                 <SidebarCard 
                     variant="pending"
-                    title="Pending"
+                    text="Pending"
                     number={5}
                 />
                 <SidebarCard 
                     variant="completed"
-                    title="Completed"
+                    text="Completed"
                     number={224}
                 />
             </div>
