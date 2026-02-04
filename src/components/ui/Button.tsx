@@ -4,7 +4,6 @@ import type { ButtonHTMLAttributes } from "react";
 type ButtonProps = {
   variant?: "primary" | "secondary";
   disabled?: boolean;
-  onClick?: void;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({

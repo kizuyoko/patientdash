@@ -66,6 +66,16 @@ export const Disabled: Story = {
   },
 };
 
+export const Clickable: Story = {
+  args: {
+    variant: "primary",
+    children: "Click me",
+    onClick: () => {
+      alert('Button clicked!');
+    }, 
+  },
+};
+
 export const AllVariants: Story = {
   render: () => (
     <div className="flex gap-4">
