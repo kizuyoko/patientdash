@@ -1,11 +1,12 @@
 import Heading from "./ui/Heading";
 import Paragraph from "./ui/Paragraph";
 import Button from "./ui/Button";
+import Modal from "./ui/Modal";
+import { useState } from "react";
 
 const Header = () => {
-    const abc = () => {
-        alert("New Patient modal is coming soon!");
-    }
+
+    const [open, setOpen] = useState(false);
 
     return (
         <header>
@@ -15,10 +16,18 @@ const Header = () => {
                     <Paragraph>Overview of all registered patients</Paragraph>
                 </div>
                 <Button
-                    onClick={abc}
+                    onClick={() => setOpen(true)}
                 >New</Button>
             </div>
+            <Modal
+                isOpen={open}
+                onClose={() => setOpen(false)}
+                title="Patient Info"
+            >
+                <p>Coming Soon...</p>
+            </Modal>
         </header>
+        
     )
 }
 
