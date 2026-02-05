@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Button from "./Button";
 import Heading from "./Heading";
+import { useEffect } from "react";
 
 type ModalProps = {
   isOpen: boolean;
@@ -12,6 +13,24 @@ type ModalProps = {
 const Modal = ({
   isOpen, onClose, title, children
 }: ModalProps) => {
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleKeyDown = (e:KeyboardEvent) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.window.removeEventListener("keydown", handleKeyDown);
+    };
+
+  }, [isOpen, onClose])
+  
   if (!isOpen) return null;
 
   return (
