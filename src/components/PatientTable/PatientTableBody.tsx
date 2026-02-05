@@ -1,17 +1,6 @@
-const PatientTable = () => {
+const PatientTableBody = () => {
     return (
-        <table>
-          <thead>
-            <tr>
-              <th>Patient ID</th>
-              <th>Name</th>
-              <th>Age</th>
-              <th>Status</th>
-              <th>Last visit</th>
-              <th>Condition</th>
-            </tr>
-          </thead>
-          <tbody>
+        <tbody>
             <tr>
               <td>PT-001</td>
               <td><b>Sarah Johnson</b></td>
@@ -52,9 +41,8 @@ const PatientTable = () => {
               <td>Jan 20, 2026</td>
               <td>Heart Disease</td>
             </tr>           
-          </tbody>
-        </table>
-    )
-}
+        </tbody>
+    );
+};
 
-export default PatientTable;
+export default PatientTableBody;

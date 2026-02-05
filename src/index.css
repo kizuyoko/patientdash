@@ -81,9 +81,7 @@
 
     /* Table */
     table {
-        border-collapse: separate;
-        border-spacing: 0;
-        @apply rounded-lg shadow-sm border border-gray-300 overflow-hidden min-w-full mt-4;
+        @apply border-separate border-spacing-0 rounded-lg shadow-sm border border-gray-300 overflow-hidden min-w-full mt-4;
     }
     table thead {
         @apply bg-gray-200 border-b border-gray-400;
@@ -126,7 +124,7 @@
     }
 
     footer ul {
-        @apply list-none p-0 m-0 flex justify-center gap-4;
+        @apply list-none p-0 m-0 flex justify-center gap-2;
     }
     footer ul li {
         @apply inline-block;
