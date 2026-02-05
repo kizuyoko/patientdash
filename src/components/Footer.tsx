@@ -1,9 +1,23 @@
+import linkedInImage from '../assets/linkedin.svg';
+import gitHubImage from '../assets/github.svg';
+import FooterIcon from './ui/FooterIcon';
+
 const Footer = () => {
     return (
         <footer>
           <ul>
-            <li><a href="https://github.com/kizuyoko/patientdash" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/kizuyoko/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li>
+              <FooterIcon 
+                src={gitHubImage} 
+                link="https://github.com/kizuyoko/patientdash" 
+                alt="GitHub" />
+            </li>
+            <li>
+              <FooterIcon 
+                src={linkedInImage} 
+                link="https://www.linkedin.com/in/kizuyoko/" 
+                alt="LinkedIn" />
+            </li>
           </ul>
         </footer>
     )

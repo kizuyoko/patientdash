@@ -69,7 +69,7 @@
         @apply mt-4 flex lg:flex-col gap-4;
     }
 
-   .card {
+    .card {
         @apply rounded-lg p-4 border;
     }
     .card-title {
