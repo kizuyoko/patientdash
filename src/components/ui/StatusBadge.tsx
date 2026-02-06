@@ -1,6 +1,8 @@
+import type { PatientStatus } from "../../types/patient";
+
 type StatusBadgeProps = {
-    status: "active" | "pending" | "completed";
-}
+  status: PatientStatus;
+};
 
 const baseClasses = "inline-flex px-3 py-1 text-xs font-medium rounded-full capitalize";
 const statusClasses = {
