@@ -13,19 +13,24 @@ const Sidebar = () => {
                     number={247}
                 />
                 <SidebarCard 
-                    variant="active"
-                    label="Active Today"
+                    variant="waiting"
+                    label="Waiting"
                     number={18}
                 />
                 <SidebarCard 
-                    variant="pending"
-                    label="Pending"
+                    variant="consult"
+                    label="In Consult"
                     number={5}
                 />
                 <SidebarCard 
-                    variant="completed"
-                    label="Completed"
+                    variant="done"
+                    label="Done"
                     number={224}
+                />
+                <SidebarCard 
+                    variant="cancelled"
+                    label="Cancelled"
+                    number={22}
                 />
             </div>
         </aside>

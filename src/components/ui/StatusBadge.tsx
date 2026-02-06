@@ -6,9 +6,10 @@ type StatusBadgeProps = {
 
 const baseClasses = "inline-flex px-3 py-1 text-xs font-medium rounded-full capitalize";
 const statusClasses = {
-    active: " bg-(--color-bg-status-active) text-(--color-text-status-active)",
-    pending: " bg-(--color-bg-status-pending) text-(--color-text-status-pending)",
-    completed: " bg-(--color-bg-status-completed) text-(--color-text-status-completed)",
+    waiting: " bg-(--color-bg-status-waiting) text-(--color-text-status-waiting)",
+    consult: " bg-(--color-bg-status-consult) text-(--color-text-status-consult)",
+    done: " bg-(--color-bg-status-done) text-(--color-text-status-done)",
+    cancelled: " bg-(--color-bg-status-cancelled) text-(--color-text-status-cancelled)",
 }
 
 

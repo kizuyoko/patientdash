@@ -5,11 +5,11 @@ import '../../index.css';
 const meta: Meta<typeof StatusBadge> = {
     title: 'UI/StatusBadge',
     component: StatusBadge,
-    args: { status: 'active' },
+    args: { status: 'waiting' },
     argTypes: {
         status: {
             control: { type: 'radio'},
-            options: ['active', 'pending', 'completed']
+            options: ['waiting', 'consult', 'done', 'cancelled']
         }
     },
     parameters: {
@@ -26,24 +26,29 @@ export default meta;
 type Story = StoryObj<typeof StatusBadge>;
 
 
-export const Active: Story = {
-    args: { status: 'active'}
+export const Waiting: Story = {
+    args: { status: 'waiting'}
 };
 
-export const Pending: Story = {
-    args: { status: 'pending'}
+export const Consult: Story = {
+    args: { status: 'consult'}
 };
 
-export const Completed: Story = {
-    args: { status: 'completed'}
+export const Done: Story = {
+    args: { status: 'done'}
+};
+
+export const Cancelled: Story = {
+    args: { status: 'cancelled'}
 };
 
 export const AllLevels: Story = {
   render: () => (
     <div className="flex gap-4">
-        <StatusBadge status="active" />
-        <StatusBadge status="pending"  />
-        <StatusBadge status="completed"  />
+        <StatusBadge status="waiting" />
+        <StatusBadge status="consult"  />
+        <StatusBadge status="done"  />
+        <StatusBadge status="cancelled"  />
     </div>
   ),
 }; 

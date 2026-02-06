@@ -13,27 +13,34 @@
         --color-text-total: theme(colors.blue.600);
         --color-bg-total: theme(colors.blue.50);
         --color-border-total: theme(colors.blue.200);
-        /* Active */
-        --color-title-active: theme(colors.green.700);
-        --color-text-active: theme(colors.green.600);
-        --color-bg-active: theme(colors.green.50);
-        --color-border-active: theme(colors.green.300);
-        --color-bg-status-active: theme(colors.green.100);
-        --color-text-status-active: theme(colors.green.800);
-        /* Pending */
-        --color-title-pending: theme(colors.orange.700);
-        --color-text-pending: theme(colors.orange.600);
-        --color-bg-pending: theme(colors.orange.50);
-        --color-border-pending: theme(colors.orange.200);
-        --color-bg-status-pending: theme(colors.orange.100);
-        --color-text-status-pending: theme(colors.orange.800);
-        /* Completed */
-        --color-title-completed: theme(colors.purple.700);
-        --color-text-completed: theme(colors.purple.600);
-        --color-bg-completed: theme(colors.purple.50);
-        --color-border-completed: theme(colors.purple.200);
-        --color-bg-status-completed: theme(colors.purple.100);
-        --color-text-status-completed: theme(colors.purple.800);
+        /* Waiting */
+        --color-title-waiting: theme(colors.amber.700);
+        --color-text-waiting: theme(colors.amber.600);
+        --color-bg-waiting: theme(colors.amber.50);
+        --color-border-waiting: theme(colors.amber.300);
+        --color-bg-status-waiting: theme(colors.amber.100);
+        --color-text-status-waiting: theme(colors.amber.800);
+        /* In Consult */
+        --color-title-consult: theme(colors.purple.700);
+        --color-text-consult: theme(colors.purple.600);
+        --color-bg-consult: theme(colors.purple.50);
+        --color-border-consult: theme(colors.purple.200);
+        --color-bg-status-consult: theme(colors.purple.100);
+        --color-text-status-consult: theme(colors.purple.800);
+        /* Done */
+        --color-title-done: theme(colors.green.700);
+        --color-text-done: theme(colors.green.600);
+        --color-bg-done: theme(colors.green.50);
+        --color-border-done: theme(colors.green.300);
+        --color-bg-status-done: theme(colors.green.100);
+        --color-text-status-done: theme(colors.green.800);
+        /* Cancelled */
+        --color-title-cancelled: theme(colors.gray.600);
+        --color-text-cancelled: theme(colors.gray.600);
+        --color-bg-cancelled: theme(colors.gray.50);
+        --color-border-cancelled: theme(colors.gray.200);
+        --color-bg-status-cancelled: theme(colors.gray.100);
+        --color-text-status-cancelled: theme(colors.gray.700);
 
     /* Button color */
          /* Primary */

@@ -1,4 +1,4 @@
-export type PatientStatus = "active" | "pending" | "completed";
+export type PatientStatus = "waiting" | "consult" | "done" | "cancelled";
 export type Gender = 'male' | 'female';
 export type BloodType = 'A'| 'B' | 'O' | 'AB';
 

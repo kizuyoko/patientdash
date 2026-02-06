@@ -3,7 +3,7 @@ import type { HTMLAttributes } from 'react';
 type SidebarCardProps = {
   label: string;
   number: number;
-  variant?: 'total' | 'active' | 'pending' | 'completed';
+  variant?: 'total' | 'waiting' | 'consult' | 'done' | 'cancelled';
   onClick?: () => void;
   className?: string;
 } & HTMLAttributes<HTMLDivElement>;
