@@ -1,7 +1,7 @@
 import type { HTMLAttributes } from 'react';
 
 type SidebarCardProps = {
-  text: string;
+  label: string;
   number: number;
   variant?: 'total' | 'active' | 'pending' | 'completed';
   onClick?: () => void;
@@ -9,7 +9,7 @@ type SidebarCardProps = {
 } & HTMLAttributes<HTMLDivElement>;
 
 const SidebarCard = ({
-  text,
+  label,
   number,
   variant = 'total',
   className = '',
@@ -29,7 +29,7 @@ const SidebarCard = ({
         className={`card-label`}
         style={{ color: `var(--color-text-${variant})`}}
       >
-        {text}
+        {label}
       </div>
       <div 
         className={`card-strong`}
