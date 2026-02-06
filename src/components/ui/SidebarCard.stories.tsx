@@ -39,7 +39,7 @@ type Story = StoryObj<typeof SideBarCard>;
 export const Default: Story = {}
 
 
-export const Pending: Story = {
+export const Waiting: Story = {
   args: {
     variant: 'waiting',
     label: 'Waiting',
