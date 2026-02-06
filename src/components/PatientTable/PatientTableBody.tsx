@@ -1,3 +1,5 @@
+import StatusBadge from "../ui/StatusBadge";
+
 const PatientTableBody = () => {
     return (
         <tbody>
@@ -6,7 +8,7 @@ const PatientTableBody = () => {
               <td><b>Sarah Johnson</b></td>
               <td>34</td>
               <td>
-                <span className="status active">Active</span>
+                <StatusBadge status="active" />
               </td>
               <td>Jan 27, 2026</td>
               <td>Hypertension</td>
@@ -16,7 +18,7 @@ const PatientTableBody = () => {
               <td><b>Michael Chen</b></td>
               <td>45</td>
               <td>
-                <span className="status completed">Completed</span>
+                <StatusBadge status="completed" />
               </td>
               <td>Jan 25, 2026</td>
               <td>Diabetes Type 2</td>
@@ -26,7 +28,7 @@ const PatientTableBody = () => {
               <td><b>Emily Rodriguez</b></td>
               <td>28</td>
               <td>
-                <span className="status active">Active</span>
+                <StatusBadge status="active" />
               </td>
               <td>Jan 8, 2026</td>
               <td>Asthma</td>
@@ -36,7 +38,7 @@ const PatientTableBody = () => {
               <td><b>James Williams</b></td>
               <td>52</td>
               <td>
-                <span className="status pending">Pending</span>
+                <StatusBadge status="pending" />
               </td>
               <td>Jan 20, 2026</td>
               <td>Heart Disease</td>

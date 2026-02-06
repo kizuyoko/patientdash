@@ -18,16 +18,22 @@
         --color-text-active: theme(colors.green.600);
         --color-bg-active: theme(colors.green.50);
         --color-border-active: theme(colors.green.300);
+        --color-bg-status-active: theme(colors.green.100);
+        --color-text-status-active: theme(colors.green.800);
         /* Pending */
         --color-title-pending: theme(colors.orange.700);
         --color-text-pending: theme(colors.orange.600);
         --color-bg-pending: theme(colors.orange.50);
         --color-border-pending: theme(colors.orange.200);
+        --color-bg-status-pending: theme(colors.orange.100);
+        --color-text-status-pending: theme(colors.orange.800);
         /* Completed */
         --color-title-completed: theme(colors.purple.700);
         --color-text-completed: theme(colors.purple.600);
         --color-bg-completed: theme(colors.purple.50);
         --color-border-completed: theme(colors.purple.200);
+        --color-bg-status-completed: theme(colors.purple.100);
+        --color-text-status-completed: theme(colors.purple.800);
 
     /* Button color */
          /* Primary */
@@ -45,9 +51,7 @@
     }
 
     body {
-        @apply font-sans;
-        background-color: var(--color-bg);
-        color: var(--color-text);
+        @apply font-sans bg-(--color-bg) text-(--color-text);
     }
     
     .body {
@@ -104,22 +108,10 @@
         @apply bg-gray-50;
     }
     table tbody td {
-        @apply border-t border-gray-200 px-6 py-4 whitespace-nowrap text-sm text-gray-900;
+        @apply border-t border-gray-200 px-6 py-4 whitespace-nowrap text-sm;
     }
     table tbody td b {
         @apply font-medium;
-    }
-    table tbody td .status {
-        @apply inline-flex px-3 py-1 text-xs font-medium rounded-full bg-green-100 text-green-800;
-    }
-    table tbody td .status.active {
-        @apply bg-green-100 text-green-800;
-    }
-    table tbody td .status.pending {
-        @apply bg-orange-100 text-orange-800;
-    }
-    table tbody td .status.completed {
-        @apply bg-purple-100 text-purple-800;
     }
 
     /* Footer */
