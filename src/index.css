@@ -41,7 +41,8 @@
         /* Disabled */
         --color-btn-disabled: theme(colors.gray.300);
         --color-btn-disabled-text: theme(colors.gray.400);
-        }
+        
+    }
 
     body {
         @apply font-sans;
@@ -72,10 +73,13 @@
     .card {
         @apply rounded-lg p-4 border;
     }
-    .card-title {
+    .card-label {
         @apply text-sm mb-1;
     }
-    .card-number {
+    .card-text {
+        @apply text-sm mb-1;
+    }
+    .card-strong {
         @apply text-3xl font-bold;
     }
 
@@ -106,7 +110,7 @@
         @apply font-medium;
     }
     table tbody td .status {
-        @apply inline-flex px-2 py-1 text-xs font-medium rounded-full bg-green-100 text-green-800;
+        @apply inline-flex px-3 py-1 text-xs font-medium rounded-full bg-green-100 text-green-800;
     }
     table tbody td .status.active {
         @apply bg-green-100 text-green-800;
@@ -128,11 +132,5 @@
     }
     footer ul li {
         @apply inline-block;
-    }
-    footer ul li a {
-        @apply text-blue-600 hover:text-blue-800 transition-colors;
-    }
-    footer ul li a:hover {
-        @apply text-blue-800 underline;
     }
 }

@@ -26,13 +26,13 @@ const SidebarCard = ({
       {...props}
     >
       <div
-        className={`card-text`}
+        className={`card-label`}
         style={{ color: `var(--color-text-${variant})`}}
       >
         {text}
       </div>
       <div 
-        className={`card-number`}
+        className={`card-strong`}
         style={{ color: `var(--color-title-${variant})` }}
       >
         {number}
