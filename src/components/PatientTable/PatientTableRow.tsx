@@ -12,7 +12,7 @@ const PatientTableRow = ({patient}: PatientTableRowProps) => {
             <td><b>{patient.name}</b></td>
             <td>{patient.age}</td>
             <td>
-            <StatusBadge status={patient.status} />
+                <StatusBadge status={patient.status} />
             </td>
             <td>{patient.lastVisit}</td>
             <td>{patient.condition}</td>
