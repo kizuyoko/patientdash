@@ -13,7 +13,7 @@ const meta: Meta<typeof SideBarCard> = {
     argTypes: {
         variant: {
             control: {type: 'radio'},
-            options: ['total', 'active', 'pending', 'completed'],
+            options: ['total', 'waiting', 'consult', 'done',  'cancelled'],
         },
         label: {
             control: 'text',
@@ -41,16 +41,30 @@ export const Default: Story = {}
 
 export const Pending: Story = {
   args: {
-    variant: 'pending',
-    label: 'Pending',
+    variant: 'waiting',
+    label: 'Waiting',
     number: 5,
   },
 };
 
-export const Completed: Story = {
+export const Consult: Story = {
   args: {
-    variant: 'completed',
-    label: 'Completed',
+    variant: 'consult',
+    label: 'In Consult',
+    number: 224,
+  },
+};
+export const Done: Story = {
+  args: {
+    variant: 'done',
+    label: 'Done',
+    number: 350,
+  },
+};
+export const Cancelled: Story = {
+  args: {
+    variant: 'cancelled',
+    label: 'Cancelled',
     number: 224,
   },
 };
@@ -59,9 +73,10 @@ export const AllLevels: Story = {
   render: () => (
     <div className="mt-4 flex lg:flex-col gap-4">
         <SideBarCard label="Total Patients" number={247} />
-        <SideBarCard variant="active" label="Active Today" number={18} />
-        <SideBarCard variant="pending" label="Pending" number={5} />
-        <SideBarCard variant="completed" label="Completed" number={224} />
+        <SideBarCard variant="waiting" label="Waiting" number={18} />
+        <SideBarCard variant="consult" label="In consult" number={5} />
+        <SideBarCard variant="done" label="Done" number={224} />
+        <SideBarCard variant="cancelled" label="Cancelled" number={2} />
     </div>
   ),
 };  
