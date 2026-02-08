@@ -21,12 +21,12 @@
         --color-bg-status-waiting: theme(colors.amber.100);
         --color-text-status-waiting: theme(colors.amber.800);
         /* In Consult */
-        --color-title-consult: theme(colors.purple.700);
-        --color-text-consult: theme(colors.purple.600);
-        --color-bg-consult: theme(colors.purple.50);
-        --color-border-consult: theme(colors.purple.200);
-        --color-bg-status-consult: theme(colors.purple.100);
-        --color-text-status-consult: theme(colors.purple.800);
+        --color-title-in_consult: theme(colors.purple.700);
+        --color-text-in_consult: theme(colors.purple.600);
+        --color-bg-in_consult: theme(colors.purple.50);
+        --color-border-in_consult: theme(colors.purple.200);
+        --color-bg-status-in_consult: theme(colors.purple.100);
+        --color-text-status-in_consult: theme(colors.purple.800);
         /* Done */
         --color-title-done: theme(colors.green.700);
         --color-text-done: theme(colors.green.600);

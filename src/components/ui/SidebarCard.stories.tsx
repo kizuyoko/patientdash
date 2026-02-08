@@ -13,7 +13,7 @@ const meta: Meta<typeof SideBarCard> = {
     argTypes: {
         variant: {
             control: {type: 'radio'},
-            options: ['total', 'waiting', 'consult', 'done',  'cancelled'],
+            options: ['total', 'waiting', 'in_consult', 'done',  'cancelled'],
         },
         label: {
             control: 'text',
@@ -49,7 +49,7 @@ export const Waiting: Story = {
 
 export const Consult: Story = {
   args: {
-    variant: 'consult',
+    variant: 'in_consult',
     label: 'In Consult',
     number: 224,
   },
@@ -74,7 +74,7 @@ export const AllLevels: Story = {
     <div className="mt-4 flex lg:flex-col gap-4">
         <SideBarCard label="Total Patients" number={247} />
         <SideBarCard variant="waiting" label="Waiting" number={18} />
-        <SideBarCard variant="consult" label="In consult" number={5} />
+        <SideBarCard variant="in_consult" label="In consult" number={5} />
         <SideBarCard variant="done" label="Done" number={224} />
         <SideBarCard variant="cancelled" label="Cancelled" number={2} />
     </div>

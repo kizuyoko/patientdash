@@ -18,7 +18,7 @@ const Sidebar = () => {
                     number={18}
                 />
                 <SidebarCard 
-                    variant="consult"
+                    variant="in_consult"
                     label="In Consult"
                     number={5}
                 />

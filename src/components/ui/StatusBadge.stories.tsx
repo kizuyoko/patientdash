@@ -9,7 +9,7 @@ const meta: Meta<typeof StatusBadge> = {
     argTypes: {
         status: {
             control: { type: 'radio'},
-            options: ['waiting', 'consult', 'done', 'cancelled']
+            options: ['waiting', 'in_consult', 'done', 'cancelled']
         }
     },
     parameters: {
@@ -31,7 +31,7 @@ export const Waiting: Story = {
 };
 
 export const Consult: Story = {
-    args: { status: 'consult'}
+    args: { status: 'in_consult'}
 };
 
 export const Done: Story = {
@@ -46,7 +46,7 @@ export const AllLevels: Story = {
   render: () => (
     <div className="flex gap-4">
         <StatusBadge status="waiting" />
-        <StatusBadge status="consult"  />
+        <StatusBadge status="in_consult"  />
         <StatusBadge status="done"  />
         <StatusBadge status="cancelled"  />
     </div>
