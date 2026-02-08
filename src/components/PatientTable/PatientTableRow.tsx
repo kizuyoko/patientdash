@@ -18,7 +18,9 @@ const PatientTableRow = ({patient}: PatientTableRowProps) => {
             <td>
                 <StatusBadge status={patient.status} />
             </td>
-            <td>{patient.lastVisit}</td>
+            <td>
+                {!patient.nextAppointment ? "—" : patient.nextAppointment}
+            </td>
             <td>{patient.condition}</td>
         </tr>
     );

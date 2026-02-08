@@ -6,7 +6,7 @@ const PatientTableHead = () => {
                 <th>Name</th>
                 <th>Age</th>
                 <th>Status</th>
-                <th>Last visit</th>
+                <th>Next Appointment</th>
                 <th>Condition</th>
             </tr>
         </thead>
