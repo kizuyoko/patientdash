@@ -1,4 +1,22 @@
+import type { PatientStatus } from "../types/patient";
+
 export const generatePatientId = (id: number): string => `PT-${String(id).padStart(4, "0")}`;
+
+export const generateFullname = (
+    first_name: string,
+    last_name: string,
+    middle_name?: string
+): string => {
+    let fullName = "";
+
+    if (middle_name) {
+        fullName = `${first_name} ${middle_name} ${last_name}`;
+    } else {
+        fullName = `${first_name} ${last_name}`;
+    }
+
+    return fullName;
+}
 
 export const calculateAge = (birthday: string): number => {
     const birthDate = new Date(birthday); 
@@ -14,3 +32,10 @@ export const calculateAge = (birthday: string): number => {
 
     return age;
 }
+
+export const generateStatusLabels: Record<PatientStatus, string> = {
+    waiting: "Waiting",
+    in_consult: "In Consult",
+    done: "Done",
+    cancelled: "Cancelled",
+};

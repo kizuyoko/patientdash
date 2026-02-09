@@ -1,4 +1,5 @@
 import type { PatientStatus } from "../../types/patient";
+import { generateStatusLabels } from '../../utilities/data';
 
 type StatusBadgeProps = {
   status: PatientStatus;
@@ -14,18 +15,11 @@ const statusClasses = {
 
 
 function StatusBadge({ status }: StatusBadgeProps) {
-    const statusLabels: Record<PatientStatus, string> = {
-        waiting: "Waiting",
-        in_consult: "In Consult",
-        done: "Done",
-        cancelled: "Cancelled",
-    };
-    
     return (
         <span
             className={`${baseClasses} ${statusClasses[status]}`}
         >
-            {statusLabels[status]}
+            {generateStatusLabels[status]}
         </span>
     );
 }
