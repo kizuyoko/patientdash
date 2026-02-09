@@ -7,7 +7,7 @@ export type Patient = {
   first_name: string;
   last_name: string;
   middle_name?: string;
-  age: number;
+  birthday: string;
   gender: Gender;
   status: PatientStatus;
   phone: string;

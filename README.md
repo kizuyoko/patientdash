@@ -34,17 +34,6 @@ Storybook:
 npm run storybook
 ```
 
-## Patient Data Type ## 
-```ts
-type Patient = {
-  id: number;
-  name: string;
-  status: 'stable' | 'warning' | 'critical';
-  heartRate: number;
-  room: string;
-};
-```
-
 ## Weekly Plan (8 weeks) ##
 
 ### Week 0: Preparation ###
