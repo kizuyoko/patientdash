@@ -27,11 +27,6 @@ const Sidebar = () => {
                     label="Done"
                     number={224}
                 />
-                <SidebarCard 
-                    variant="cancelled"
-                    label="Cancelled"
-                    number={22}
-                />
             </div>
         </aside>
     )
