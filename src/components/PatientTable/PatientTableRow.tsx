@@ -1,20 +1,24 @@
 import StatusBadge from "../ui/StatusBadge";
 import type { Patient } from "../../types/patient";
+import { generatePatientId, calculateAge } from '../../utilities/data';
 
 type PatientTableRowProps = {
     patient: Patient
 };
 
 const PatientTableRow = ({patient}: PatientTableRowProps) => {
-     const fullName = patient.middle_name
+    const patientId = generatePatientId(patient.id);
+    const fullName = patient.middle_name
         ? `${patient.first_name} ${patient.middle_name} ${patient.last_name}`
         : `${patient.first_name} ${patient.last_name}`;
 
+    const age = calculateAge(patient.birthday);
+
     return (
         <tr>
-            <td>{patient.id}</td>
+            <td>{patientId}</td>
             <td><b>{fullName}</b></td>
-            <td>{patient.age}</td>
+            <td>{age}</td>
             <td>
                 <StatusBadge status={patient.status} />
             </td>

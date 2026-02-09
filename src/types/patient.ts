@@ -3,7 +3,7 @@ export type Gender = 'male' | 'female';
 export type BloodType = 'A'| 'B' | 'O' | 'AB';
 
 export type Patient = {
-  id: string;
+  id: number;
   first_name: string;
   last_name: string;
   middle_name?: string;

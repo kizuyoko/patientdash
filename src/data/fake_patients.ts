@@ -2,7 +2,7 @@ import type { Patient } from "../types/patient";
 
 export const patients: Patient[] = [
   {
-    id: "PT-001",
+    id: 1,
     first_name: "Sarah",
     last_name: "Johnson",
     birthday: "1992-09-06",
@@ -19,7 +19,7 @@ export const patients: Patient[] = [
     madications: "Lisinopril",
   },
   {
-    id: "PT-002",
+    id: 2,
     first_name: "Michael",
     last_name: "Smith",
     birthday: "1904-06-30",
@@ -35,7 +35,7 @@ export const patients: Patient[] = [
     madications: "Metformin",
   },
   {
-    id: "PT-003",
+    id: 3,
     first_name: "Emily",
     last_name: "Davis",
     middle_name: "Smith",
@@ -53,7 +53,7 @@ export const patients: Patient[] = [
     madications: "Albuterol",
   },
   {
-    id: "PT-004",
+    id: 4,
     first_name: "James",
     last_name: "Wilson",
     birthday: "2025-01-08",
