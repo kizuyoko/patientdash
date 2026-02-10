@@ -47,7 +47,7 @@ const Modal = ({
           <Heading>{title}</Heading>
         )}
 
-        <div className="overflow-y-auto py-4">
+        <div className="overflow-y-auto pb-4">
           {children}
         </div>
         

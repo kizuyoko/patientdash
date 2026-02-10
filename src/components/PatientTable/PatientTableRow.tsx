@@ -37,7 +37,6 @@ const PatientTableRow = ({patient}: PatientTableRowProps) => {
             <Modal
                 isOpen={open}
                 onClose={() => setOpen(false)}
-                title={`${fullName} (${patientId})`}
             >
                 <PatientDetail patient={patient} />
             </Modal>
