@@ -1,6 +1,6 @@
 export type PatientStatus = "waiting" | "in_consult" | "done" | "cancelled";
 export type Gender = 'male' | 'female';
-export type BloodType = 'A'| 'B' | 'O' | 'AB';
+export type BloodType = 'A+' | 'A-' | 'B+' | 'B-' | 'O+' | 'O-' | 'AB+' | 'AB-' | 'Unknown';
 
 export type Patient = {
   id: number;
@@ -9,6 +9,7 @@ export type Patient = {
   middle_name?: string;
   birthday: string;
   gender: Gender;
+  bloodType: BloodType;
   status: PatientStatus;
   phone: string;
   email: string;
