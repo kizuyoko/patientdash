@@ -19,5 +19,5 @@ export type Patient = {
   doctor: string;
   condition: string;
   allergies?: string; // Later array
-  madications?: string;
+  medications?: string;
 };

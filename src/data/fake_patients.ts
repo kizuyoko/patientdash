@@ -17,7 +17,7 @@ export const patients: Patient[] = [
     doctor: "Dr. Brown",
     condition: "Hypertension",
     allergies: "Penicillin",
-    madications: "Lisinopril",
+    medications: "Lisinopril",
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ export const patients: Patient[] = [
     nextAppointment: "2026-02-05",
     doctor: "Dr. Green",
     condition: "Diabetes",
-    madications: "Metformin",
+    medications: "Metformin",
   },
   {
     id: 3,
@@ -53,7 +53,7 @@ export const patients: Patient[] = [
     doctor: "Dr. White",
     condition: "Asthma",
     allergies: "Dust",
-    madications: "Albuterol",
+    medications: "Albuterol",
   },
   {
     id: 4,
@@ -70,6 +70,6 @@ export const patients: Patient[] = [
     doctor: "Dr. Black",
     condition: "Migraine",
     allergies: "Chocolate",
-    madications: "Sumatriptan",
+    medications: "Sumatriptan",
   },
 ];
