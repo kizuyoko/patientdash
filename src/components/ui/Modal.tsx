@@ -47,7 +47,7 @@ const Modal = ({
       />
 
       {/* modal box */}
-      <div className="relative z-10 bg-white rounded-lg shadow-lg max-w-full min-w-md m-6 max-h-[80vh] flex flex-col p-6">
+      <div className="relative z-10 bg-white rounded-lg shadow-lg max-w-full m-6 max-h-[80vh] flex flex-col p-6">
         {title && (
           <Heading>{title}</Heading>
         )}

@@ -88,11 +88,21 @@
         @apply text-sm mb-1;
     }
     .card-text {
-        @apply text-sm mb-1;
+        @apply text-lg mb-1;
+    }
+    .card-semibold {
+        @apply text-lg font-semibold; 
     }
     .card-strong {
         @apply text-3xl font-bold;
     }
+
+    .patient-modal .card {
+        @apply bg-gray-50 border-0;
+    }
+
+
+
 
     /* Table */
     table {
