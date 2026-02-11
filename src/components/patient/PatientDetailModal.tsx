@@ -1,13 +1,13 @@
-import type { Patient } from "../types/patient";
-import { generatePatientId, generateFullname, calculateAge } from '../utilities/data';
-import StatusBadge from "./ui/StatusBadge";
-import Heading from "./ui/Heading";
+import type { Patient } from "../../types/patient";
+import { generatePatientId, generateFullname, calculateAge } from '../../utilities/data';
+import StatusBadge from "../ui/StatusBadge";
+import Heading from "../ui/Heading";
 
 type PatientProps = {
     patient: Patient
 }
 
-const PatientDetail = ({ patient }: PatientProps) => {
+const PatientDetailModal = ({ patient }: PatientProps) => {
     const age = calculateAge(patient.birthday);
     const ageText = age === 0 
         ? 'Less than 1 year' 
@@ -45,5 +45,5 @@ const PatientDetail = ({ patient }: PatientProps) => {
     );
 };
 
-export default PatientDetail;
+export default PatientDetailModal;
 

@@ -3,7 +3,7 @@ import type { Patient } from "../../types/patient";
 import { generatePatientId, generateFullname, calculateAge } from '../../utilities/data';
 import Modal from "../ui/Modal";
 import { useState } from "react";
-import PatientDetail from "../PatientDetail";
+import PatientDetailModal from "./PatientDetailModal";
 
 type PatientsTableRowProps = {
     patient: Patient
@@ -38,7 +38,7 @@ const PatientsTableRow = ({patient}: PatientsTableRowProps) => {
                 isOpen={open}
                 onClose={() => setOpen(false)}
             >
-                <PatientDetail patient={patient} />
+                <PatientDetailModal patient={patient} />
             </Modal>
         </>
     );
