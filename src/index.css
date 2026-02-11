@@ -76,7 +76,7 @@
 }
 
 @layer components {
-    /* Aside Overview */    
+/* Aside Overview */    
     .overview {
         @apply mt-4 flex lg:flex-col gap-4;
     }
@@ -88,7 +88,7 @@
         @apply text-sm mb-1;
     }
     .card-text {
-        @apply text-lg mb-1;
+        @apply m-0;
     }
     .card-semibold {
         @apply text-lg font-semibold; 
@@ -97,8 +97,30 @@
         @apply text-3xl font-bold;
     }
 
+/* Modal */
+    .modal-root {
+        @apply fixed inset-0 z-50 flex items-center justify-center;
+    }
+    .modal-overlay {
+        @apply absolute inset-0 bg-black/60;
+    }
+
+    .modal-box {
+        @apply relative z-10 bg-white rounded-lg shadow-lg max-w-full min-w-2xs sm:min-w-sm m-6 max-h-[80vh] flex flex-col p-6;
+    }
+
     .patient-modal .card {
         @apply bg-gray-50 border-0;
+    }
+    .patient-modal section {
+        @apply mt-6;
+    }
+    .patient-modal section h3 {
+        @apply pb-2
+    }
+
+    .basic-info-wrap{
+        @apply grid grid-cols-2 sm:grid-cols-4 gap-4;
     }
 
 

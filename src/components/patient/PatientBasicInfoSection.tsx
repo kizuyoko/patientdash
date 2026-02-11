@@ -16,7 +16,7 @@ const PatientBasicInfoSection = ({ patient }: PatientProps) => {
     return (
         <section>
             <Heading level={3}>Basic Information</Heading>
-            <div className="my-4 grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div className="basic-info-wrap">
                 <div className="card">
                     <p className="card-label">Age</p>
                     <p className="card-semibold">{ageText}</p>

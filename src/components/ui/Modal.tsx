@@ -37,17 +37,17 @@ const Modal = ({
     <div 
         role="dialog"
         aria-modal="true"
-        aria-labelledby="patient-detail-title"
-      className="fixed inset-0 z-50 flex items-center justify-center"
+        aria-labelledby="patient-detail"
+        className="modal-root"
     >
       {/* overlay */}
       <div
-        className="absolute inset-0 bg-black/60"
+        className="modal-overlay"
         onClick={onClose}
       />
 
       {/* modal box */}
-      <div className="relative z-10 bg-white rounded-lg shadow-lg max-w-full m-6 max-h-[80vh] flex flex-col p-6">
+      <div className="modal-box">
         {title && (
           <Heading>{title}</Heading>
         )}
@@ -56,7 +56,7 @@ const Modal = ({
           {children}
         </div>
         
-        <div className="flex justify-end gap-2">
+        <div className="flex justify-end">
           <Button
             onClick={onClose}
           >

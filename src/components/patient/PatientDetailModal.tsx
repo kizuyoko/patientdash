@@ -2,6 +2,9 @@ import type { Patient } from "../../types/patient";
 import { generatePatientId, generateFullname } from '../../utilities/data';
 import Heading from "../ui/Heading";
 import PatientBasicInfoSection from "./PatientBasicInfoSection";
+import PatientContactInfoSection from "./PatientContactInfoSection";
+import PatientMedicalInfoSection from "./PatientMedicalInfoSection";
+import PatientVisitHistorySection from "./PatientVisitHistorySection";
 
 type PatientProps = {
     patient: Patient
@@ -20,9 +23,9 @@ const PatientDetailModal = ({ patient }: PatientProps) => {
                 </span>
             </Heading>
             <PatientBasicInfoSection patient={patient} />
-            <Heading level={3}>Contact Information</Heading>
-            <Heading level={3}>Medical Information</Heading>
-            <Heading level={3}>Visit History</Heading>            
+            <PatientContactInfoSection patient={patient} />
+            <PatientMedicalInfoSection patient={patient} />
+            <PatientVisitHistorySection patient={patient} />           
         </section>
     );
 };
