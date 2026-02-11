@@ -8,10 +8,20 @@ type PatientProps = {
 const PatientVisitHistorySection = ({ patient }: PatientProps) => {
     return (
         <section>
-            <Heading level={3}>Medical Information</Heading>
+            <Heading level={3}>Visit History</Heading>
             <div className="card">
-                <p className="card-label">Age</p>
-                <p className="card-text">{patient.birthday}</p>
+                <div>
+                    <p className="card-label">Last Visit</p>
+                    <p className="mb-4">{patient.lastVisit ?? '—'}</p>
+                </div>
+                <div>
+                    <p className="card-label">Next Appointment</p>
+                    <p className="mb-4">{patient.nextAppointment ?? '—'}</p>
+                </div>
+                <div>
+                    <p className="card-label">Assigned Doctor</p>
+                    <p>{patient.doctor}</p>
+                </div>
             </div>
         </section>
     );
