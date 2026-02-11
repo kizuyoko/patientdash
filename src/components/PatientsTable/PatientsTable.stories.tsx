@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import PatientTable from './PatientTable';
+import PatientsTable from './PatientsTable';
 import "../../index.css";
 
-const meta: Meta<typeof PatientTable> = {
-    title: "Components/PatientTable",
-    component: PatientTable,
+const meta: Meta<typeof PatientsTable> = {
+    title: "Components/PatientsTable",
+    component: PatientsTable,
     parameters: {
         docs: {
             description: {
@@ -17,6 +17,6 @@ const meta: Meta<typeof PatientTable> = {
 
 export default meta;
 
-type Story = StoryObj<typeof PatientTable>;
+type Story = StoryObj<typeof PatientsTable>;
 
 export const Default: Story = {};

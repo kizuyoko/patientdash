@@ -1,4 +1,4 @@
-import PatientTableRow from "./PatientTableRow";
+import PatientsTableRow from "./PatientsTableRow";
 import { patients } from "../../data/fake_patients";
 
 const PatientTableBody = () => {
@@ -6,7 +6,7 @@ const PatientTableBody = () => {
         <tbody>
             {
               patients.map((patient) => (
-                <PatientTableRow 
+                <PatientsTableRow 
                   key={patient.id} 
                   patient={patient} 
                 />

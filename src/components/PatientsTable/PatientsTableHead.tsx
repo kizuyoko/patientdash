@@ -1,4 +1,4 @@
-const PatientTableHead = () => {
+const PatientsTableHead = () => {
     return (
         <thead>
             <tr>
@@ -13,4 +13,4 @@ const PatientTableHead = () => {
     );
 };
 
-export default PatientTableHead;
+export default PatientsTableHead;

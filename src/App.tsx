@@ -1,4 +1,4 @@
-import PatientTable from './components/PatientTable/PatientTable';
+import PatientTable from './components/PatientsTable/PatientsTable';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import Footer from './components/Footer';

@@ -5,11 +5,11 @@ import Modal from "../ui/Modal";
 import { useState } from "react";
 import PatientDetail from "../PatientDetail";
 
-type PatientTableRowProps = {
+type PatientsTableRowProps = {
     patient: Patient
 };
 
-const PatientTableRow = ({patient}: PatientTableRowProps) => {
+const PatientsTableRow = ({patient}: PatientsTableRowProps) => {
     const [open, setOpen] = useState(false);
 
     const patientId = generatePatientId(patient.id);
@@ -44,4 +44,4 @@ const PatientTableRow = ({patient}: PatientTableRowProps) => {
     );
 };
 
-export default PatientTableRow;
+export default PatientsTableRow;
