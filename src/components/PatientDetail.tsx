@@ -16,7 +16,7 @@ const PatientDetail = ({ patient }: PatientProps) => {
     const fullName = generateFullname(patient.first_name, patient.last_name, patient.middle_name);    
 
     return (
-        <article>
+        <section>
             <Heading>{fullName}  <span className="text-sm font-normal">{patientId}</span></Heading>
             
             <Heading level={3}>Basic Information</Heading>
@@ -41,7 +41,7 @@ const PatientDetail = ({ patient }: PatientProps) => {
             <Heading level={3}>Contact Information</Heading>
             <Heading level={3}>Medical Information</Heading>
             <Heading level={3}>Visit History</Heading>            
-        </article>
+        </section>
     );
 };
 
