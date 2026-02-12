@@ -1,7 +1,7 @@
 import PatientsTableRow from "./PatientsTableRow";
-import { patients } from "../../data/fake_patients";
+import type { Patients } from "../../types/patient";
 
-const PatientTableBody = () => {
+const PatientTableBody = ({ patients } : { patients: Patients }) => {
     return (
         <tbody>
             {

@@ -1,6 +1,6 @@
-import type { Patient } from "../types/patient";
+import type { Patients } from "../types/patient";
 
-export const patients: Patient[] = [
+export const patients: Patients = [
   {
     id: 1,
     first_name: "Sarah",

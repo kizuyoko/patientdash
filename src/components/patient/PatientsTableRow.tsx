@@ -5,11 +5,8 @@ import Modal from "../ui/Modal";
 import { useState } from "react";
 import PatientDetailModal from "./PatientDetailModal";
 
-type PatientsTableRowProps = {
-    patient: Patient
-};
 
-const PatientsTableRow = ({patient}: PatientsTableRowProps) => {
+const PatientsTableRow = ({ patient }: { patient: Patient }) => {
     const [open, setOpen] = useState(false);
 
     const patientId = generatePatientId(patient.id);

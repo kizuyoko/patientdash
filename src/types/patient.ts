@@ -21,3 +21,5 @@ export type Patient = {
   allergies?: string; // Later array
   medications?: string;
 };
+
+export type Patients = Patient[];

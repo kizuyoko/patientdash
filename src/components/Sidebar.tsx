@@ -1,9 +1,9 @@
 import Heading from "./ui/Heading";
 import Paragraph from "./ui/Paragraph";
 import SidebarCard from "./ui/SidebarCard";
-import { patients } from "../data/fake_patients";
+import type { Patients } from "../types/patient";
 
-const Sidebar = () => {
+const Sidebar = ({ patients } : { patients: Patients })=> {
     const totalPatients = patients.length;
     const watingPatients = patients.filter(p => p.status === 'waiting').length;
     const in_consultPatients = patients.filter(p => p.status === 'in_consult').length;
