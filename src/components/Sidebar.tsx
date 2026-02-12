@@ -1,8 +1,14 @@
 import Heading from "./ui/Heading";
 import Paragraph from "./ui/Paragraph";
 import SidebarCard from "./ui/SidebarCard";
+import { patients } from "../data/fake_patients";
 
 const Sidebar = () => {
+    const totalPatients = patients.length;
+    const watingPatients = patients.filter(p => p.status === 'waiting').length;
+    const in_consultPatients = patients.filter(p => p.status === 'in_consult').length;
+    const donePatients = patients.filter(p => p.status === 'done').length;
+
     return (
         <aside>
             <Heading level={1}>PatientDash</Heading>
@@ -10,22 +16,22 @@ const Sidebar = () => {
             <div className="overview">
                 <SidebarCard 
                     label="Total Patients"
-                    number={247}
+                    number={totalPatients}
                 />
                 <SidebarCard 
                     variant="waiting"
                     label="Waiting"
-                    number={18}
+                    number={watingPatients}
                 />
                 <SidebarCard 
                     variant="in_consult"
                     label="In Consult"
-                    number={5}
+                    number={in_consultPatients}
                 />
                 <SidebarCard 
                     variant="done"
                     label="Done"
-                    number={224}
+                    number={donePatients}
                 />
             </div>
         </aside>
