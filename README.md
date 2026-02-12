@@ -52,7 +52,7 @@ npm run storybook
 - Display placeholder components
 
 #### Week 2: UI Components & Storybook ####
-- Card, Table, Badge, Button, Spinner
+- Card, Table, Badge, Button
 - Write Storybook stories
 - Hook: useState for local state
 
@@ -87,4 +87,7 @@ npm run storybook
 - Write README
 - Plan CRUD (Add/Edit/Delete)
 - Document components & hooks structure
+
+#### Additional Functions ####
+- Search bar on the header. 
 
