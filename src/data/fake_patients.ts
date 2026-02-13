@@ -17,7 +17,7 @@ export const patients: Patients = [{
   "doctor": "Gothart Wingate",
   "condition": "Flu",
   "allergies": "Mold",
-  "medications": "aspirin"
+  "medications": "Aspirin"
 }, {
   "id": 2,
   "first_name": "Edie",
@@ -53,7 +53,7 @@ export const patients: Patients = [{
   "doctor": "Devlen Lethebridge",
   "condition": "Heart Disease",
   
-  "medications": "albuterol"
+  "medications": "Albuterol"
 }, {
   "id": 4,
   "first_name": "Aaren",
@@ -71,7 +71,7 @@ export const patients: Patients = [{
   "doctor": "Shane Frowd",
   "condition": "Flu",
   "allergies": "Grass",
-  "medications": "amoxicillin"
+  "medications": "Amoxicillin"
 }, {
   "id": 5,
   "first_name": "Elle",
@@ -89,7 +89,7 @@ export const patients: Patients = [{
   "doctor": "Winny Josebury",
   "condition": "Heart Disease",
   "allergies": "Eggs",
-  "medications": "metformin"
+  "medications": "Metformin"
 }, {
   "id": 6,
   "first_name": "Carly",
@@ -107,7 +107,7 @@ export const patients: Patients = [{
   "doctor": "Gill Grimmer",
   "condition": "Migraine",
   "allergies": "Cats",
-  "medications": "acetaminophen"
+  "medications": "Acetaminophen"
 }, {
   "id": 7,
   "first_name": "Kleon",
@@ -125,7 +125,7 @@ export const patients: Patients = [{
   "doctor": "Gibby Getten",
   "condition": "Anxiety",
   "allergies": "Grass",
-  "medications": "simvastatin"
+  "medications": "Simvastatin"
 }, {
   "id": 8,
   "first_name": "Sallie",
@@ -143,7 +143,7 @@ export const patients: Patients = [{
   "doctor": "Avigdor Dennis",
   "condition": "Arthritis",
   "allergies": "Cats",
-  "medications": "omeprazole"
+  "medications": "Omeprazole"
 }, {
   "id": 9,
   "first_name": "Adolph",
@@ -161,7 +161,7 @@ export const patients: Patients = [{
   "doctor": "Lindon Dimbleby",
   "condition": "Asthma",
   "allergies": "Eggs",
-  "medications": "ibuprofen"
+  "medications": "Ibuprofen"
 }, {
   "id": 10,
   "first_name": "Egan",
@@ -197,7 +197,7 @@ export const patients: Patients = [{
   "doctor": "Jonah Buxcy",
   "condition": "Flu",
 
-  "medications": "albuterol"
+  "medications": "Albuterol"
 }, {
   "id": 12,
   "first_name": "Damita",
@@ -215,7 +215,7 @@ export const patients: Patients = [{
   "doctor": "Aldridge Lamort",
   "condition": "Migraine",
 
-  "medications": "aspirin"
+  "medications": "Aspirin"
 }, {
   "id": 13,
   "first_name": "Nathanial",
@@ -269,7 +269,7 @@ export const patients: Patients = [{
   "doctor": "Lanie Dood",
   "condition": "Allergy",
   "allergies": "Dust",
-  "medications": "albuterol"
+  "medications": "Albuterol"
 }, {
   "id": 16,
   "first_name": "Meg",
@@ -287,7 +287,7 @@ export const patients: Patients = [{
   "doctor": "Salvatore Caistor",
   "condition": "Hypertension",
   "allergies": "Cats",
-  "medications": "lisinopril"
+  "medications": "Lisinopril"
 }, {
   "id": 17,
   "first_name": "Josefa",
