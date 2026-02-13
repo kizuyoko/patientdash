@@ -2,11 +2,11 @@
 **Timeline:** 2 months (Weekdays, 1-2 hours/day)  
 **Project:** Simple patient management dashboard for hospital staff.
 
----
+
+![Dashboard Overview](public/screenshot_dashboard.png)
+![Patient Detail Modal](public/screenshot_modal.png)
 
 ## Project Overview ##
-
-![Dashboard Overview](/screenshot.png)
 
 **PatientDash** is a simple, single-page dashboard to manage patients.
 - Patient list (table)
