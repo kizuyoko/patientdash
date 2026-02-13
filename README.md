@@ -5,6 +5,9 @@
 ---
 
 ## Project Overview ##
+
+![Dashboard Overview](/screenshot.png)
+
 **PatientDash** is a simple, single-page dashboard to manage patients.
 - Patient list (table)
 - Overview (Sticky sidebar)
